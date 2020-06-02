@@ -1,10 +1,10 @@
 # English
-This repository run the vagrant image (Ubuntu 18.04) which contains requirements for running MCL mining or staking. You can look at http://marmara.io for information.
+This repository run the vagrant image (Ubuntu 20.04) which contains requirements for running MCL mining or staking. You can look at http://marmara.io for information.
 
 ## Requirements
 *   install virtual box from https://www.virtualbox.org/wiki/Downloads
 *   install vagrant from https://www.vagrantup.com/downloads
-*   clone this repository with `git clone https://github.com/adilkaraoz/mcl_with_vagrant.git` or download as zip and open somewhere
+*   clone this repository with `git clone https://github.com/adilkaraoz/mcl_with_vagrant.git` or download as zip and open somewhere.
 
 ## Steps to start
 *   Enter the repository folder you cloned or extracted.
@@ -16,9 +16,11 @@ This repository run the vagrant image (Ubuntu 18.04) which contains requirements
 ## Notes
 *   At the first run, it takes some time to download image and bootstap file. (downloading blocks)
 *   You don't have to use the komodo commands with ./, komodod and komodo-cli already added to your path. So, you can run with `komodod` directly
+*   If you want to run Ubuntu 18.04 download https://github.com/adilkaraoz/mcl_with_vagrant/archive/0.0.2.zip and extract. Follow same steps above.
+*   If you want to run Ubuntu 16.04 download https://github.com/adilkaraoz/mcl_with_vagrant/archive/v0.0.1.zip and extract. Follow same steps above.
 
 # Türkçe
-Bu repo tüm MCL mining veya staking yapmak için gereksinimleri içeren Ubuntu 18.04 vagrant imajını içerir. Detaylı bilgiyi http://marmara.io adresinde bulabilirsiniz.
+Bu repo tüm MCL mining veya staking yapmak için gereksinimleri içeren Ubuntu 20.04 vagrant imajını içerir. Detaylı bilgiyi http://marmara.io adresinde bulabilirsiniz.
 
 ## Gereklilikler
 *   https://www.virtualbox.org/wiki/Downloads adresinden Virtual Box'ı indirin ve yükleyin.
@@ -35,3 +37,5 @@ Bu repo tüm MCL mining veya staking yapmak için gereksinimleri içeren Ubuntu 
 ## Notlar
 *   ilk çalıştırma imajı ve blokları indirmek için biraz zaman alabilir.
 *   Komodo komutlarını ./ ile başlatmak zorunda değilsiniz, komodod ve komodo-cli komutlarını direkt çalıştırabilirsiniz. Örnek: `komodod`
+*   Eğer Ubuntu 18.04 çalıştırmak istiyorsanız, https://github.com/adilkaraoz/mcl_with_vagrant/archive/0.0.2.zip indirin ve ayıklayın. Yukarıki aynı adımları takip edin.
+*   Eğer Ubuntu 16.04 çalıştırmak istiyorsanız, https://github.com/adilkaraoz/mcl_with_vagrant/archive/v0.0.1.zip indirin ve ayıklayın. Yukarıki aynı adımları takip edin.
