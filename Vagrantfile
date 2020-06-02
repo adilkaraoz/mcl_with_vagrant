@@ -3,7 +3,7 @@
 Vagrant.require_version ">= 2.0.0"
 ### configuration parameters
 BOX_BASE = "adilkaraoz/mcl_requirements"
-BOX_VERSION = "0.0.1"
+BOX_VERSION = "0.0.2"
 BOX_CPU_COUNT = 2
 BOX_RAM_MB = "4096"
 
@@ -13,9 +13,24 @@ WORKER_COUNT = 1
 WORKER_PREFIX = "worker0"
 
 $script = <<-SCRIPT
-echo symlink of komodo...
-sudo ln -s /home/vagrant/komodo/src/komodod /usr/local/bin/komodod
-sudo ln -s /home/vagrant/komodo/src/komodo-cli /usr/local/bin/komodo-cli
+echo enabling firewall...
+sudo apt-get update && sudo apt-get install ufw ssh libgomp1 -y
+echo y | sudo ufw enable
+sudo ufw allow "OpenSSH" && sudo ufw allow 33824
+echo creating swap...
+sudo fallocate -l 4G /swapfile && sudo chmod 600 /swapfile
+sudo mkswap /swapfile && sudo swapon /swapfile
+echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
+echo 'vm.swappiness=10' | sudo tee -a /etc/sysctl.conf
+echo getting bootstrapfile to get some blocks...
+cd /tmp
+wget https://eu.bootstrap.dexstats.info/MCL-bootstrap.tar.gz
+mkdir -p /home/vagrant/.komodo/MCL
+sudo chown vagrant: /home/vagrant/.komodo
+sudo chown vagrant: /home/vagrant/.komodo/MCL
+rm -f /home/vagrant/.komodo/MCL/*
+tar xf MCL-bootstrap.tar.gz -C /home/vagrant/.komodo/MCL
+rm MCL-bootstrap.tar.gz
 SCRIPT
 
 Vagrant.configure("2") do |config|
