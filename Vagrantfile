@@ -3,7 +3,7 @@
 Vagrant.require_version ">= 2.0.0"
 ### configuration parameters
 BOX_BASE = "adilkaraoz/mcl_requirements"
-BOX_VERSION = "0.0.3"
+BOX_VERSION = "0.0.4"
 BOX_CPU_COUNT = 2
 BOX_RAM_MB = "4096"
 

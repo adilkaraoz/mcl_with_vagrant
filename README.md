@@ -1,5 +1,6 @@
 # English
 This repository run the vagrant image (Ubuntu 20.04) which contains requirements for running MCL mining or staking. You can look at http://marmara.io for information.
+Komodo updated to hard forked version at 10.06.2020.
 
 ## Requirements
 *   install virtual box from https://www.virtualbox.org/wiki/Downloads
@@ -19,8 +20,17 @@ This repository run the vagrant image (Ubuntu 20.04) which contains requirements
 *   If you want to run Ubuntu 18.04 download https://github.com/adilkaraoz/mcl_with_vagrant/archive/0.0.2.zip and extract. Follow same steps above.
 *   If you want to run Ubuntu 16.04 download https://github.com/adilkaraoz/mcl_with_vagrant/archive/v0.0.1.zip and extract. Follow same steps above.
 
+## Donate
+if you like this configuration you can take me a coffee.
+
+### MCL wallet address
+RTR3gNmYdTKY9RmM9CJzbp1KJ5MU4z6UGr
+### KMD wallet address
+RVj4VBWcrWyAPFqiZiGt17QrXxpFNeZKSn
+
 # Türkçe
 Bu repo tüm MCL mining veya staking yapmak için gereksinimleri içeren Ubuntu 20.04 vagrant imajını içerir. Detaylı bilgiyi http://marmara.io adresinde bulabilirsiniz.
+Komodo Hard Fork sürümü 10.06.2020 ile güncellenmiştir.
 
 ## Gereklilikler
 *   https://www.virtualbox.org/wiki/Downloads adresinden Virtual Box'ı indirin ve yükleyin.
@@ -39,3 +49,11 @@ Bu repo tüm MCL mining veya staking yapmak için gereksinimleri içeren Ubuntu 
 *   Komodo komutlarını ./ ile başlatmak zorunda değilsiniz, komodod ve komodo-cli komutlarını direkt çalıştırabilirsiniz. Örnek: `komodod`
 *   Eğer Ubuntu 18.04 çalıştırmak istiyorsanız, https://github.com/adilkaraoz/mcl_with_vagrant/archive/0.0.2.zip indirin ve ayıklayın. Yukarıki aynı adımları takip edin.
 *   Eğer Ubuntu 16.04 çalıştırmak istiyorsanız, https://github.com/adilkaraoz/mcl_with_vagrant/archive/v0.0.1.zip indirin ve ayıklayın. Yukarıki aynı adımları takip edin.
+
+## Bağış
+Eğer bu konfigrasyonu sevmişseniz, bana bir kahve ısmarlayabilirsiniz.
+
+### MCL adresim
+RTR3gNmYdTKY9RmM9CJzbp1KJ5MU4z6UGr
+### KMD adresim
+RVj4VBWcrWyAPFqiZiGt17QrXxpFNeZKSn
